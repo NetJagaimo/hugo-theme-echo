@@ -4,9 +4,9 @@
     <!--Card-->
         <div class="p-8 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
             {{ if .Data.Term }}
-                <p class="text-gray-900 font-bold text-3xl pb-2">标签: {{.Data.Term}}</p>
+                <p class="text-gray-900 font-bold text-3xl pb-2">標籤: {{.Data.Term}}</p>
             {{ else }}
-                <p class="text-gray-900 font-bold text-3xl pb-2">文章归档</p>
+                <p class="text-gray-900 font-bold text-3xl pb-2">文章歸檔</p>
             {{ end }}
 
             {{ range (where .Data.Pages "Type" "in" (slice "post" "posts")).GroupByDate "2006" -}}

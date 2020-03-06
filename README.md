@@ -1,58 +1,58 @@
 ![hugo-theme-echo-preview](https://blog-1251237404.cos.ap-guangzhou.myqcloud.com/VSk6Kq.png)
 ## hugo-theme-echo
 
-Echo 是一个风格简洁的 Hugo 主题。
+Echo 是一個風格簡潔的 Hugo 主題。
 
 [我的博客](https://blog.forecho.com)
 
 **主要特色：**
 
-- 风格基于 [Tailwind CSS](https://tailwindcss.com/)
-- 使用更快的 Chroma 代码高亮
-- 自定义 css，自定义 js，自定义 head
-- 文章支持目录
-- 支持相关阅读
+- 風格基於 [Tailwind CSS](https://tailwindcss.com/)
+- 使用更快的 Chroma 代碼高亮
+- 自定義 css，自定義 js，自定義 head
+- 文章支持目錄
+- 支持相關閱讀
 
-## 谁在用 hugo-theme-echo
+## 誰在用 hugo-theme-echo
 
 - [forecho](https://blog.forecho.com)
 - Waiting to add more...
 
 ## 如何使用？
 
-**注意：** 这个教程假设你 **第一次** 使用 [Hugo][] 。 [Hugo][] 是一个非常流行的静态网站生成工具。 你可查看官方文档 [Hugo Official Docs][] 获取更多帮助。
+**注意：** 這個教程假設你 **第一次** 使用 [Hugo][] 。 [Hugo][] 是一個非常流行的靜態網站生成工具。 你可查看官方文檔 [Hugo Official Docs][] 獲取更多幫助。
 
 [Hugo]: https://gohugo.io/
 [Hugo Official Docs]: https://gohugo.io/getting-started/
 
 
 
-### 快速安装 Hugo
+### 快速安裝 Hugo
 
-从 [Hugo Releases](https://github.com/gohugoio/hugo/releases) 上直接下载安装适合你的版本。
+從 [Hugo Releases](https://github.com/gohugoio/hugo/releases) 上直接下載安裝適合你的版本。
 
 
 
-### 快速创建网站
+### 快速創建網站
 
 ```bash
 hugo new site myBlog
 ```
 
-上面的命令将会在一个名为 `myBlog`  的文件夹中创建一个新的 hugo 站点。
+上面的命令將會在一個名爲 `myBlog`  的文件夾中創建一個新的 hugo 站點。
 
 
 
 ### 快速使用 
 
-把这个主题克隆到 `themes` 文件夹
+把這個主題克隆到 `themes` 文件夾
 
 ```bash
 cd myBlog
 git submodule add https://github.com/forecho/hugo-theme-echo.git --depth=1 themes/echo
 ```
 
-站点设置示例：
+站點設置示例：
 
 ```toml
 baseURL = "http://localhost:1313"
@@ -60,21 +60,21 @@ languageCode = "en-us"
 title = "Forecho's Blog"
 theme = "echo"
 DefaultContentLanguage = "cn"
-# 自动检测是否包含中文/日文/韩文，该参数会影响摘要和字数统计功能，建议设置为true
+# 自動檢測是否包含中文/日文/韓文，該參數會影響摘要和字數統計功能，建議設置爲true
 hasCJKLanguage = true
-# 设置页面生成形式，将默认的网站路径/修改成.html
+# 設置頁面生成形式，將默認的網站路徑/修改成.html
 uglyURLs = true
 googleAnalytics = ""      # UA-XXXXXXXX-X
 
-## 评论系统
-changyanAppid = "" # Changyan app id             # 畅言
+## 評論系統
+changyanAppid = "" # Changyan app id             # 暢言
 changyanAppkey = "" # Changyan app key
 disqusShortname = "forecho-blog" # disqus account name
-livereUID = "" # LiveRe UID                  # 来必力
+livereUID = "" # LiveRe UID                  # 來必力
 
 [markup.highlight]
-codeFences = true # 高亮markdown的代码块
-guessSyntax = true # 高亮markdown中没有标注语言的代码块
+codeFences = true # 高亮markdown的代碼塊
+guessSyntax = true # 高亮markdown中沒有標註語言的代碼塊
 hl_Lines = ""
 lineNoStart = 1
 lineNos = true
@@ -97,7 +97,7 @@ limit = 20
 [author]
 name = "forecho"
 avatar = "https://avatars0.githubusercontent.com/u/1725326?s=460&v=4"
-bio = "7年开发经验，寻求技术 Leader 工作机会。Wechat: ipzone"
+bio = "7年開發經驗，尋求技術 Leader 工作機會。Wechat: ipzone"
 homepage = "https://forecho.io/"
 
 [params]
@@ -111,29 +111,29 @@ navItems = [
   ["ABOUT", "/about.html"],
   ["RSS", "/atom.xml"]
 ]
-# rss 全文输出
+# rss 全文輸出
 rssFullContent = true
 uglyURLs = true
-busuanzi = true # 是否使用不蒜子统计站点访问量
+busuanzi = true # 是否使用不蒜子統計站點訪問量
 staticCDNPrefix = "https://cdn.bootcss.com/font-awesome/5.11.2"
 extraHead = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-xxx"></script>'
 postAds = ""
-profileAds = '<div class="bg-white shadow"><img class=" object-cover w-auto mx-auto mt-6" src="https://blog-1251237404.cos.ap-guangzhou.myqcloud.com/20190424153337.png" alt="微信打赏"></div>'
+profileAds = '<div class="bg-white shadow"><img class=" object-cover w-auto mx-auto mt-6" src="https://blog-1251237404.cos.ap-guangzhou.myqcloud.com/20190424153337.png" alt="微信打賞"></div>'
 notFoundAds = ''
 
-# 开启版权声明，协议名字和链接都可以换
+# 開啓版權聲明，協議名字和鏈接都可以換
 [params.cc]
-name = "署名-非商业性使用 4.0 国际 (CC BY-NC 4.0)"
+name = "署名-非商業性使用 4.0 國際 (CC BY-NC 4.0)"
 link = "https://creativecommons.org/licenses/by-nc/4.0/deed.zh"
 
-# 文章打赏
+# 文章打賞
 [params.reward]
 enable = true
-title = "打赏"
-wechat = "https://blog-1251237404.cos.ap-guangzhou.myqcloud.com/20190424153510.png" # 微信二维码
-alipay = "https://blog-1251237404.cos.ap-guangzhou.myqcloud.com/20190424153431.png" # 支付宝二维码
+title = "打賞"
+wechat = "https://blog-1251237404.cos.ap-guangzhou.myqcloud.com/20190424153510.png" # 微信二維碼
+alipay = "https://blog-1251237404.cos.ap-guangzhou.myqcloud.com/20190424153431.png" # 支付寶二維碼
 
-############## 评论系统  start ##############
+############## 評論系統  start ##############
 [params.gitment] # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
 owner = "" # Your GitHub ID
 repo = "" # The repo to store comments
@@ -160,11 +160,11 @@ appKey = '你的appKey'
 notify = false # mail notifier , https://github.com/xCss/Valine/wiki
 verify = false # Verification code
 avatar = 'mm'
-placeholder = '说点什么吧...'
+placeholder = '說點什麼吧...'
 visitor = false
 
-############ 评论系统  end ##############
-## 社交链接
+############ 評論系統  end ##############
+## 社交鏈接
 [social]
 github = "forecho"
 jsfiddle = "forecho"
@@ -191,62 +191,62 @@ douban = "ipzone"
 rss = "/atom.xml"
 ```
 
-启动 hugo server ：
+啓動 hugo server ：
 
 ```bash
 hugo server -D
 ```
 
-打开 http://localhost:1313/ ，你将会看到一个示例网站。
+打開 http://localhost:1313/ ，你將會看到一個示例網站。
 
 
 
-### 开始你的博客
+### 開始你的博客
 
-默认配置文件 `config.toml` 位于你的网站的根目录，请按自身需要进行定制。
+默認配置文件 `config.toml` 位於你的網站的根目錄，請按自身需要進行定製。
 
-默认的文章文件位于 `./content/posts` 目录。
-
-
-### 生成你的网站
-
-直接运行 `hugo` ，将会自动生成你的网站到 `public/` 目录。
-
-如果你有额外的时间，并且想更多的了解 [Hugo][] ，请查阅官方文档 [Hugo Official Docs][] 。
+默認的文章文件位於 `./content/posts` 目錄。
 
 
-## 单篇文章的设置
+### 生成你的網站
 
-**Front Matter** : Hugo 允许你使用 yaml， toml 或者 json 语法在你每一篇文章的开头进行设置。
+直接運行 `hugo` ，將會自動生成你的網站到 `public/` 目錄。
+
+如果你有額外的時間，並且想更多的瞭解 [Hugo][] ，請查閱官方文檔 [Hugo Official Docs][] 。
+
+
+## 單篇文章的設置
+
+**Front Matter** : Hugo 允許你使用 yaml， toml 或者 json 語法在你每一篇文章的開頭進行設置。
 
 **YAML 示例：**
 
 ```yaml
 ---
-# 常用定义
-title: "An Example Post"           # 标题
-date: 2018-01-01T16:01:23+08:00    # 创建时间
-lastmod: 2018-01-02T16:01:23+08:00 # 最后修改时间
+# 常用定義
+title: "An Example Post"           # 標題
+date: 2018-01-01T16:01:23+08:00    # 創建時間
+lastmod: 2018-01-02T16:01:23+08:00 # 最後修改時間
 draft: false                       # 是否是草稿？
-tags: ["tag-1", "tag-2", "tag-3", "popular"]  # 标签
-categories: ["index"]              # 分类
+tags: ["tag-1", "tag-2", "tag-3", "popular"]  # 標籤
+categories: ["index"]              # 分類
 author: "forecho"                  # 作者
 
-# 用户自定义
-# 你可以选择 关闭(false) 或者 打开(true) 以下选项
-comment: false   # 关闭评论
-toc: false       # 关闭文章目录
-reward: false	 # 关闭打赏
+# 用戶自定義
+# 你可以選擇 關閉(false) 或者 打開(true) 以下選項
+comment: false   # 關閉評論
+toc: false       # 關閉文章目錄
+reward: false	 # 關閉打賞
 ---
 ```
 
-## 关于热门文章
+## 關於熱門文章
 
-如果标签里面含有 `popular` 就会自动出现再热门文章列表中，目前热门文章只会在侧边栏和404页面展示，热门文章列表最多展示5篇文章。
+如果標籤裏面含有 `popular` 就會自動出現再熱門文章列表中，目前熱門文章只會在側邊欄和404頁面展示，熱門文章列表最多展示5篇文章。
 
-## 感谢
+## 感謝
 
-本主题参考了以下主题的部分代码：
+本主題參考了以下主題的部分代碼：
 
 - [hugo-theme-even](https://github.com/olOwOlo/hugo-theme-even)
 - [hugo-theme-jane](https://github.com/xianmin/hugo-theme-jane)

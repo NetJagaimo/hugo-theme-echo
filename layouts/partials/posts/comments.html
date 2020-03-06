@@ -93,10 +93,10 @@
 
   <!-- valine -->
   {{- if .Site.Params.valine.enable -}}
-  <!-- id 将作为查询条件 -->
+  <!-- id 將作爲查詢條件 -->
     {{- if .Site.Params.valine.visitor -}}
 	  <span id="{{ .RelPermalink | relURL }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
-		<span class="post-meta-item-text">文章阅读量 </span>
+		<span class="post-meta-item-text">文章閱讀量 </span>
 		<span class="leancloud-visitors-count">0</span>
 		<p></p>
 	  </span>
